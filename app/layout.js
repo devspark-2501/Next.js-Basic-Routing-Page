@@ -3,13 +3,13 @@ import NavBar from "./Component/NavBar";
 import Footer from "./Component/Footer";
 
 export const metadata = {
-  title: 'DevSpark Website'
+  title: "DevSpark Website",
 }
 
-export default function MainLayout( {children} ) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gray-950 text-white">
         <NavBar />
         {children}
         <Footer />

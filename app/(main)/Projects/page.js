@@ -1,8 +1,13 @@
+// 'use client' // lets You get Hooks from react 
+// import { useState } from "react";
+import Link from "next/link";
+
 export const metadata = {
   title: 'Projects | DevSpark Website'
 }
 
 export default function Projects() {
+  // const [show, setShow] = useState('');
   const projects = [
     {
       title: "Movie App",
@@ -36,16 +41,21 @@ export default function Projects() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 border border-gray-800"
-            >
-              <h2 className="text-2xl font-semibold mb-3 text-blue-400">
-                {project.title}
-              </h2>
-              <p className="text-gray-300 mb-4">{project.description}</p>
-              <span className="text-sm text-gray-500">{project.tech}</span>
-            </div>
+            <Link key={index} href='/Projects/ViewProject'>
+              <div
+                className="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 border border-gray-800"
+              >
+                <h2 className="text-2xl font-semibold mb-3 text-blue-400">
+                  {project.title}
+                  {/* <a href="https://react-movie-finder-website.netlify.app/"
+                    target="_blank">
+                    
+                  </a> */}
+                </h2>
+                <p className="text-gray-300 mb-4">{project.description}</p>
+                <span className="text-sm text-gray-500">{project.tech}</span>
+              </div>
+            </Link>
           ))}
         </div>
 
