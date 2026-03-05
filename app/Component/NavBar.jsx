@@ -10,13 +10,13 @@ export default function NavBar() {
                 </h1>
 
                 <ul className="flex gap-8 text-lg font-medium">
-                    <Link href='/' className='"hover:text-blue-400 cursor-pointer transition duration-300'>Home</Link>
+                    <Link href='/' className="hover:bg-gray-900 rounded-4xl px-3 py-2 text-xl hover:opacity-30">Home</Link>
 
-                    <Link href='/About' className='"hover:text-blue-400 cursor-pointer transition duration-300'>About</Link>
+                    <Link href='/About' className="hover:bg-gray-900 rounded-4xl px-3 py-2 text-xl hover:opacity-30">About</Link>
                     
-                    <Link href='/Contact' className='"hover:text-blue-400 cursor-pointer transition duration-300'>Contact</Link>
+                    <Link href='/Contact' className="hover:bg-gray-900 rounded-4xl px-3 py-2 text-xl hover:opacity-30">Contact</Link>
                     
-                    <Link href='/Projects' className='"hover:text-blue-400 cursor-pointer transition duration-300'>Projects</Link>
+                    <Link href='/Projects' className="hover:bg-gray-900 rounded-4xl px-3 py-2 text-xl hover:opacity-30">Projects</Link>
                 </ul>
 
             </div>
