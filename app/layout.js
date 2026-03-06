@@ -3,7 +3,9 @@ import NavBar from "./Component/NavBar";
 import Footer from "./Component/Footer";
 
 export const metadata = {
-  title: "DevSpark Website",
+  title: {
+    default: "DevSpark Website"
+  }
 }
 
 export default function RootLayout({ children }) {

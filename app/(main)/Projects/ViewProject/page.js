@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 
+// export const metadata
+
 async function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }

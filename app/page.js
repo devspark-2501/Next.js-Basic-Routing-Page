@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Hero from "./Component/Hero"; // Hero section component
 
 export default function Home() {
   return (
-    <div className="bg-gray-950 text-white min-h-[80vh] flex items-center">
+    <div className="bg-gray-950 text-white min-h-[80vh] flex items-center pt-20">
       
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         
@@ -37,6 +38,12 @@ export default function Home() {
           </div>
         </div>
 
+        {/* <div className="absolute top-180 ">
+          View Our, <br />
+          <span>Image Gallery</span>
+        </div> */}
+        
+        <Hero /> {/* Hero section componenet */}
       </div>
     </div>
   )
