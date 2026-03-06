@@ -4,7 +4,8 @@ import Footer from "./Component/Footer";
 
 export const metadata = {
   title: {
-    default: "DevSpark Website"
+    default: "DevSpark Website",
+    template: "%s | DevSpark Website"
   }
 }
 
