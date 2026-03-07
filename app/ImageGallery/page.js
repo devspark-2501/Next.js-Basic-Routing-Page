@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -36,6 +36,9 @@ export default function ImageGallery() {
   return (
     <div className="min-h-screen bg-gray-950 p-10 grid grid-cols-4 gap-6">
       {data.map((img) => (
+        // <Suspense fallback= {<div>
+            
+        // </div>}>
         <div
           key={img.id}
           className="overflow-hidden rounded-2xl shadow-[0_15px_40px_rgba(17,24,39,0.4)] group"
@@ -45,6 +48,7 @@ export default function ImageGallery() {
             className="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
           />
         </div>
+        // </Suspense>
       ))}
     </div>
   )

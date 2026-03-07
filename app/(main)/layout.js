@@ -1,6 +1,12 @@
 // import "./globals.css"
-// import NavBar from "./Component/NavBar";
-// import Footer from "./Component/Footer";
+// import NavBar from "./Component/NavBar"
+// import Footer from "./Component/Footer"
+
+import CircleError from "../Component/CircleError"
+
+// import CircleError from "../Component/CircleError"
+// import Footer from "../Component/Footer"
+// import NavBar from "../Component/NavBar"
 
 export const metadata = {
   title: "My Website",
@@ -9,10 +15,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <>
+      {children} <CircleError />
+    </>
   )
 }

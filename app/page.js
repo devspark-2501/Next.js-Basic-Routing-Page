@@ -1,7 +1,21 @@
+'use client'
+import { useState } from "react";
 import Link from "next/link";
 import Hero from "./Component/Hero"; // Hero section component
+import CircleError from "./Component/CircleError";
 
 export default function Home() {
+  // const [crash, setCrash] = useState(false);
+
+  // if (crash) {
+  //   throw new Error('YOU Crased the page')
+  // }
+  // // const [crash, setCrash] = useState(false)
+
+  // // if (crash) {
+  // //   throw new Error("You crashed the page!")
+  // // }
+
   return (
     <div className="bg-gray-950 text-white min-h-[80vh] flex items-center pt-20">
       
@@ -45,6 +59,13 @@ export default function Home() {
         
         <Hero /> {/* Hero section componenet */}
       </div>
+      
+      {/* <h1>Homepage</h1>
+      <button onClick={() => setCrash(true)}>
+        Crash the page
+      </button> */}
+    
+      <CircleError />
     </div>
   )
 }
