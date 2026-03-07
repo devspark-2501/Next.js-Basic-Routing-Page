@@ -20,7 +20,7 @@ export default function Error({ error, reset }) {
 
                 <button
                     onClick={() => reset()}
-                    className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition hover:opacity-60"
+                    className="mt-2 px-6 py-3 bg-gray-950 text-gray-500 border-2 shadow-gray-950 shadow-2xl font-semibold rounded-3xl hover:opacity-70"
                 >
                     Try again
                 </button> {/* reset an JS property to make the web reload and restart the site */}

@@ -45,7 +45,7 @@ export default function ImageGallery() {
         >
           <img
             src={img.download_url}
-            className="w-full h-52 object-cover transition duration-500 group-hover:scale-110"
+            className="w-full h-52 object-cover transition duration-500 group-hover:scale-110 hover:opacity-60"
           />
         </div>
         // </Suspense>
