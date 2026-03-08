@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Hero from "./Component/Hero"; // Hero section component
 import CircleError from "./Component/CircleError";
+import CircleChat from "./Component/CircleChat";
 
 export default function Home() {
   // const [crash, setCrash] = useState(false);
@@ -65,7 +66,8 @@ export default function Home() {
         Crash the page
       </button> */}
     
-      <CircleError />
+      <CircleError /> {/* that random error page link, specfic for home page */}
+      <CircleChat /> {/* same with the chat button */}
     </div>
   )
 }
