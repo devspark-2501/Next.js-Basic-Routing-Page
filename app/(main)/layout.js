@@ -2,6 +2,7 @@
 // import NavBar from "./Component/NavBar"
 // import Footer from "./Component/Footer"
 
+import CircleChat from "../Component/CircleChat"
 import CircleError from "../Component/CircleError"
 
 // import CircleError from "../Component/CircleError"
@@ -16,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
-      {children} <CircleError />
+      {children} <CircleError /> <CircleChat />
     </>
   )
 }
